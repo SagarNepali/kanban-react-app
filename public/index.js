@@ -11,6 +11,7 @@ let cardsList = [
 		title: "Read the Book",
 		description: "I should read the whole book",
 		status: "in-progress",
+		color: '#BD8D31',
 		tasks: []
 	},
 	{
@@ -18,6 +19,7 @@ let cardsList = [
 		title: "Write some code",
 		description: "Code along with the samples in the book",
 		status: "todo",
+		color: '#3A7E28',
 		tasks: [
 			{
 				id: 1,
