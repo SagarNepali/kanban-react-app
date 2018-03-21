@@ -2,6 +2,7 @@
 
 */
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 
 class List extends Component{
@@ -12,6 +13,7 @@ class List extends Component{
 					id={card.id}
 					title={card.title}
 					color={card.color}
+					taskCallbacks={this.props.taskCallbacks}
 					description={card.description}
 					tasks={card.tasks}/>
 	
@@ -24,7 +26,12 @@ class List extends Component{
 			</div>
 		);
 	}
-}
+};
+List.propTypes = {
+	title: PropTypes.string.isRequired,
+	cards: PropTypes.arrayOf(PropTypes.object),
+	taskCallbacks: PropTypes.object
+};
 
 export default List;
 
